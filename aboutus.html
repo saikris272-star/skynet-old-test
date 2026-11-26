@@ -1,0 +1,196 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<title>Skynet Mobiles</title>
+<link href="css/style.css" type="text/css" rel="stylesheet" media="all" />
+
+<script type="text/javascript" src="js/jquery-1.9.1.min.js"></script>
+<script type="text/javascript" src="js/jquery.orbit.min.js"></script>
+<script type="text/javascript">
+			$(window).load(function() {
+				$('#featured').orbit({
+					'bullets': true,
+					'timer' : true,
+					'animation' : 'horizontal-slide'
+				});
+			});
+</script>
+<style type="text/css">
+#featured { width: 220px; height: 120px; overflow: hidden;}
+div.orbit { width: 1px; height: 1px; position: relative; -moz-box-shadow: 0 0 10px rgba(0,0,0,.25); -webkit-box-shadow: 0 0 10px rgba(0,0,0,.25);  overflow: hidden; border-radius:5px;}
+div.orbit img { position: absolute; top:0; left:0; width:178px; border-radius:5px;}
+div.orbit a img { border: none; }
+
+/* TIMER */
+div.timer { width: 40px; height: 40px; overflow: hidden; position: absolute; top: 10px; right:10px; opacity: .6; cursor: pointer; z-index: 1001; }
+span.rotator { display: block; width: 40px; height: 40px; position: absolute; top: 0; left: -20px; background: url('orbit/rotator-black.png') no-repeat; z-index: 3; }
+span.mask { display: block; width: 20px; height: 40px; position: absolute; top: 0; right: 0; z-index: 2; overflow: hidden; }
+span.rotator.move { left: 0; }
+span.mask.move { width: 40px; left: 0; background: url('orbit/timer-black.png') repeat 0px 0px;  }
+span.pause { display: block; width: 40px; height: 40px; position: absolute; top: 0; left: 0px; background: url('orbit/pause-black.png') no-repeat; z-index: 4; opacity: 0; }
+div.timer:hover span.pause,
+span.pause.active, 
+div.timer:hover span.pause.active { opacity: 1; }
+
+/* CAPTIONS */
+div.caption { background: #000; background: rgba(0,0,0,.6); width: 100%; z-index: 1000; position: absolute; bottom:-100px; color: #fff; padding: 8px 0; }
+div.caption span { padding: 0 10px; font-size: 14px; text-shadow: 0px 1px 0px rgba(0,0,0,.8); margin: 0; }
+.orbit-caption { display: none; }
+
+/* DIRECTIONAL NAV */
+div.orbit:hover div.slider-nav { display: block; }
+div.slider-nav { display: none; }
+div.slider-nav span { width: 33px; height: 33px; text-indent: -9999px; position: absolute; z-index: 1000; top: 43%; cursor: pointer; }
+div.slider-nav span.right { background: url('orbit/right-arrow.png'); right: 10px; }
+div.slider-nav span.left { background: url('orbit/left-arrow.png'); left: 10px; }   
+
+/* BULLET NAV */
+.orbit-bullets { position: absolute; z-index: 1000; list-style: none; top: 10px; left: 7px; margin: 0; padding: 0; }
+.orbit-bullets li { float: left; margin-left: 5px; cursor: pointer; color: #999; text-indent: -9999px; background: url(orbit/bullets.png) no-repeat; 0 0; width: 7px; height: 7px; overflow: hidden; }
+.orbit-bullets li.active { color: #222; background-position: -7px 0; }
+</style>
+
+<script type="text/javascript" src="js/js-crwaler.js"></script>
+<script type="text/javascript">
+    marqueeInit({
+        uniqueid: 'mycrawler2',
+        style: {
+            'margin-top': '',
+			'border': 'solid 1px #121212',
+            'width': '475px',
+			'height':'100px'
+        },
+        inc: 10, 
+        mouse: 'cursor driven', 
+        moveatleast: 1,
+        neutral: 200,
+        savedirection: true,
+        random: true
+    });
+</script>
+</head>
+
+<body>
+<div class="header">
+	<div class="widthT">
+    	<div style="width:1000px; float:left;" class="effect2">
+            <div style="width:250px; padding-top:20px; padding-bottom:10px; float:left">
+                <img src="images/skynet-logo.png" width="250"/>
+            </div>
+            <div style="width:650px; margin-top:20px; float:left;">
+            	<div class="menu">
+                	<div id='cssmenu'>
+                        <ul>
+                           <li><a href='index.html'><span>Home</span></a></li>
+                           <li class='active'><a href='aboutus.html'><span>About Us</span></a></li>
+                           <li><a href='products.html'><span>Products</span></a></li>
+                           <li><a href='team.html'><span>Team</span></a></li>
+                           <li><a href='services.html'><span>Services</span></a></li>
+                           <li class='last'><a href='contact.html'><span>Contact</span></a></li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+<div class="slider">
+<div style="background:url(images/aboutus.jpg) no-repeat center center; width:3000px; height:320px; overflow:hidden;"></div>
+</div>
+<div class="widthT">
+    <div style="width:1000px; float:left; margin-top:15px;">
+    	<div style="width:783px; float:left; height:auto;">
+        	<h2 style="margin:0; padding:0; font-weight:normal; font-family:'Oswald'; font-size:18px; color:#003e9a; border-bottom:solid #003e9a 2px;">About Us</h2> 
+            <div style="width:270px; float:left;">
+            	<img src="images/profile-a-1.jpg" width="260"  style="float:left; margin-top:15px; border:solid 1px #CCC;"/> 	
+            </div>
+            <p style="text-align:justify; text-align:justify; line-height:18px;">Skynet Mobile Company is one of the leading companies in the field of technical for both men and women, with a wide selection of products ranging from mobiles and computers. </p>
+            
+            <p style="text-align:justify; text-align:justify; line-height:18px;">We at Skynet Mobiles are proud of our presence in the Kuwaiti market for more than nineteen years. The beginning was in 1996. When we open our first branch in farwaniya, Fire Station St. Thankfully, this branch drew in many customers, who were attracted by the variety of our products, our competitive prices and most importantly our keeping with all the new international fashion trends and styles. As the year went on and boosted by our customers support, Skynet Mobiles expanded. One branch at a time. Todat is has 4 branches, spread around the country to cover most of its areas with other branches  opened for the sale of mobiles. </p>
+            
+            <p style="text-align:justify; text-align:justify; line-height:18px;">Skynet Mobile has staff of more than 24 employees of various nationalities, which provide ease in dealing with all the different nationalities in Kuwait. Our stated capital is $300,000.</p>
+            
+            <p style="text-align:justify; ">Our auditor is AL Bassam & Co a member of Kreston International a worldwide network of independent accounts.</p>
+            
+            <div style="width:250px; float:right; height:124px; line-height:18px; background:url(images/aim.jpg) repeat-x top center; border-radius:10px; padding:10px; border:solid 1px #e1e1e1; margin-left:15px;">
+            	<h2 style="margin:0; padding:0; font-weight:normal; padding-bottom:5px; font-family:'Oswald'; font-size:18px; color:#003e9a; border-bottom:solid #003e9a 2px;">Our Aim</h2>
+            	<p style="line-height:18px; line-height:20px;">Our future aim is to expand our operations outside Kuwait by opening branches in the Middle East. Our targeted market for new are India and Dubai.</p>
+            </div>
+            
+            <div style="width:465px; float:left; height:124px; line-height:18px; background:url(images/aim.jpg) repeat-x top center; border-radius:10px; padding:10px; border:solid 1px #e1e1e1;">
+            	<h2 style="margin:0; padding:0; font-weight:normal;  font-family:'Oswald'; padding-bottom:5px; font-size:18px; color:#003e9a; ">Our Functions</h2>
+            	<div class="marquee" id="mycrawler2">
+                    <img src="images/function-1.jpg" style="margin-right:5px; border:solid 1px #000000;" width="125"/>
+                    <img src="images/function-2.jpg" style="margin-right:5px;  border:solid 1px #000000" width="125"/>
+                    <img src="images/function-3.jpg" style="margin-right:5px;  border:solid 1px #000000" width="125"/>
+                    <img src="images/function-4.jpg" style="margin-right:5px;  border:solid 1px #000000" width="125"/>
+                    <img src="images/function-5.jpg" style="margin-right:5px;  border:solid 1px #000000" width="125"/>
+                    <img src="images/function-6.jpg" style="margin-right:5px; border:solid 1px #000000" width="125"/>
+                </div>
+            </div>
+            
+            
+        </div>
+        <div style="width:200px; margin-left:15px; float:left; ">
+        	<div style="background:#f2f2f2; border-radius:5px; padding:5px 10px 10px 10px; box-shadow:#AEAEAE -1px 1px 3px; border:solid 1px #d5d5d5;">
+            	<h2 style="margin:0; padding:0; font-weight:normal; padding-bottom:10px; font-family:'Oswald'; font-size:18px; color:#003e9a; ">Our Staff</h2>
+            	<div id="featured"> 
+                        <img src="images/1-staff.jpg" alt="Link" />
+                        <img src="images/2-staff.jpg" alt="Link" />
+                        <img src="images/3-staff.jpg" alt="Link" />
+                        <img src="images/4-staff.jpg" alt="Link" />
+                        <img src="images/5-staff.jpg" alt="Link" />
+                        <img src="images/6-staff.jpg" alt="Link" />
+                    </div>
+            </div>
+            
+            <div style="margin-top:15px; box-shadow:#AEAEAE -1px 1px 3px; border:solid 1px #d5d5d5; border-radius:5px;">
+            	<a href="#"><img src="images/accessories.jpg"  style="border-radius:5px;" width="198"/></a>
+            </div>
+        </div>
+    </div>
+    <div style="clear:both;"></div>
+    
+    <div style="width:1000px; margin:15px auto; border-top:solid #dfe0e1 1px; padding-top:5px;">
+    <table style="width:100%; font-size:12px; color:#333; float:left">
+                <tr valign="middle">
+                    <td style="width:500px; float:left" >
+                        Copyrights © 2014 | Skynet Mobiles All Rights Reserved
+                    </td>
+                    <td style=" margin-top:-6px; text-align:right; float:right;" valign="top">
+                        <table cellpadding="0" cellspacing="0" border="0">
+                            <tr>
+                                <td>Designed by</td><td> <a  href="http://www.sumat.it" target="_blank"><img src="images/logo1.png" width="35" style="margin-left:10px; border:none;"/></a></td>
+                            </tr>
+                        </table>
+                    </td>
+                </tr>
+            </table>
+    </div>
+</div>
+<script type="text/javascript">
+$(function(){
+  $('#sidemenu a').on('click', function(e){
+    e.preventDefault();
+
+    if($(this).hasClass('open')) {
+      // do nothing because the link is already open
+    } else {
+      var oldcontent = $('#sidemenu a.open').attr('href');
+      var newcontent = $(this).attr('href');
+      
+      $(oldcontent).fadeOut('fast', function(){
+        $(newcontent).fadeIn().removeClass('hidden');
+        $(oldcontent).addClass('hidden');
+      });
+      
+     
+      $('#sidemenu a').removeClass('open');
+      $(this).addClass('open');
+    }
+  });
+});
+</script>
+</body>
+</html>
